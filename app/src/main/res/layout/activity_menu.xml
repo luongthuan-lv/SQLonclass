@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+    <ImageView
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/anh2"
+        android:id="@+id/ivanh"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    <Button
+        android:layout_below="@+id/ivanh"
+        android:onClick="them"
+        android:id="@+id/btnthem"
+        android:text="Thêm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_toRightOf="@+id/btnthem"
+        android:layout_below="@+id/ivanh"
+        android:onClick="sua"
+        android:id="@+id/btnsua"
+        android:text="Sửa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_toRightOf="@+id/btnsua"
+        android:layout_below="@+id/ivanh"
+        android:onClick="xoa"
+        android:id="@+id/btnxoa"
+        android:text="Xóa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_toRightOf="@+id/btnxoa"
+        android:layout_below="@+id/ivanh"
+        android:onClick="danhsach"
+        android:id="@+id/btndanhsach"
+        android:text="List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
